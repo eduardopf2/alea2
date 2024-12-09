@@ -1,0 +1,93 @@
+/* Resetando algumas configurações para ter um começo clean */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo e estilo básico do corpo */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Títulos principais em cores vibrantes e animados */
+h1 {
+    color: #f44336;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    animation: shake 1s infinite alternate;
+}
+
+/* Animação de tremor para dar um toque engraçado */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(10px); }
+}
+
+/* Estilo para os parágrafos - dando um toque descontraído */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fazendo o texto ser mais expressivo com uma cor engraçada */
+p:nth-of-type(odd) {
+    color: #3f51b5;
+    font-style: italic;
+}
+
+/* Alterando a cor para algo mais engraçado no segundo parágrafo */
+p:nth-of-type(even) {
+    color: #ff5722;
+    font-weight: bold;
+}
+
+/* Estilo das imagens - com borda redonda e um pouco de sombra */
+img {
+    max-width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+/* Pequeno efeito de transição para imagens ao passar o mouse */
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Rodapé engraçado */
+footer {
+    margin-top: 50px;
+    font-size: 1.5em;
+    color: #ff9800;
+    text-align: center;
+}
+
+/* Adicionando uma borda ao redor do conteúdo */
+body {
+    border: 10px solid #4caf50;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Efeito de texto piscando para dar um toque ainda mais cômico */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h1:last-of-type {
+    animation: blink 1s infinite;
+}
